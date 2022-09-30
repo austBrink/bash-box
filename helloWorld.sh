@@ -15,5 +15,7 @@ x=1
 y=8
 answer=$((x+y))
 echo $answer
+# There's another really good thing.... 
+read -p "name: " name 
+echo "Hello, "$name"!"
 echo "Goodbye!"
-
