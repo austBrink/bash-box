@@ -1,2 +1,2 @@
 # bash-box
-A sand box to learn BASH 
+A sandbox to learn BASH 
