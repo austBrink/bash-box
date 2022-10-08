@@ -27,3 +27,12 @@ Okay. We've learned how to....
 Now Let's look at writing contents to that file we made with `touch` 
 We'll use a cool tool called `nano` to do it. Here goes. 
 In order to write contents inside our classNotes.txt we'll type `nano classNotes.txt` Now you get a new looking screen. But now we are inside our file. Just write whatever you want and type `ctrl + x` to save and exit.
+## Copying Files 
+Creating files is cool, so is writing them. What if I want to copy files? Easy there're a copy command. `cp` There's two things `cp` needs to work however. The file we want to copy and the name of the copy. So if I want a copy of classNotes called classNotes2 I'll need `cp classNotes.txt classNotes2.txt` It's that easy. 
+## Moving files
+Let's say we want to move a file? Let's create a new directory called `copies`. Remember how? `mkdir copies` now we have a _copies_ directory right inside our myFolder directory. Okay, now lets mv our notes copy into that folder. We'll use the `mv` command for that. the mv command will need the location of the thing we want to move and the path to where we want it to go. mv thingToMove PlaceToMoveIt. Here we go. `mv ./classNotes2.txt ./copies/classNotes2.txt` Good. 
+## Deleting files
+To illustrate this point lets make one more copy. This time we'll do that in our copies folder. lets cd into it. `cd copies`. Cool, now lets copy that file. `cp classNotes2.txt classNotes3.txt` Good. Okay. Now lets delete classNotes2. We'll use the rm (for remove) command. `rm classNotes.txt` Good. Now lets delete the whole copies folder. We'll need to cd up a directory. to do that we use 2 dots. `cd ..` type `pwd` see? we're back at myFolder. type `ls` to show the contents. Let's delete that copies directory. That's exaclty like removing a single file but we'll need two special modifications. with rm we'll type -rf. the r says to delete all things in a directory. the f says to force any file locks. Here we go. 
+`rm -rf copies`. awesome.
+
+## Summary and conclusion
